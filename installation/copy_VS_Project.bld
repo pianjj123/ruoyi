@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='8' encrypted='1'>
+	<steps type='0'>
+		<step action='Group'>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<name>copy_DSS_Sln</name>
+		</step>
+		<step action='Copy Files'>
+			<Converted type='11'>-1</Converted>
+			<Delay>15</Delay>
+			<DestDir>P:\prj_Darwin_VS_fix_2019</DestDir>
+			<Ext><![CDATA[*.dsp
+*.dsw]]></Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<Move type='11'>-1</Move>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Retries>10</Retries>
+			<SourceDir>P:\prj_Darwin_VS_fix</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<buildfailsteps type='11'>0</buildfailsteps>
+			<indent type='3'>1</indent>
+			<name>Copy Files</name>
+		</step></steps>
+</project>

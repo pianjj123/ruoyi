@@ -1,0 +1,16 @@
+There was an error parsing D:\RelayServer\Official\src\APIModules\QTSSAccessModule\QTSSAccessModule.cpp  on line 75.  Unexpected symbol: "	
+You may need to define a language macro.	
+There was an error parsing D:\RelayServer\Official\src\APIModules\QTSSAccessModule\QTSSAccessModule.cpp  on line 75.  Unexpected symbol: "	
+You may need to define a language macro.	
+There was an error parsing D:\RelayServer\Official\src\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp  on line 97.  Unexpected symbol: "	
+You may need to define a language macro.	
+There was an error parsing D:\RelayServer\Official\src\broadcasterctl\BroadcasterAdminController.h  on line 35.  Unexpected symbol: @	
+You may need to define a language macro.	
+There was an error parsing D:\RelayServer\Official\src\broadcasterctl\BroadcasterRemoteAdmin.h  on line 76.  Unexpected symbol: @	
+You may need to define a language macro.	
+
+
+
+
+There was an error parsing D:\RelayServer\Official\src\Server.tproj\QTSServerInterface.cpp  on line 66.  Unexpected symbol: "	
+You may need to define a language macro.	

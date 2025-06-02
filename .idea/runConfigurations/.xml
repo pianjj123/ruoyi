@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="未命名" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" singleton="false" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b" TARGET_NAME="PlatformHeader.h" CONFIG_NAME="未命名">
+    <option name="sourceFile" value="C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\PlatformHeader.h" />
+    <method v="2">
+      <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

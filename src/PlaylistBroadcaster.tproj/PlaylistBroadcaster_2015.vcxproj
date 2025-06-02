@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{A0D2568D-886E-432A-9085-AB2ADE47EB01}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <AdditionalIncludeDirectories>../;../CommonUtilitiesLib/;../QTFileLib/;../RTPMetaInfoLib/;../RTSPClientLib/;../APIModules/;../APIStubLib/;../APICommonCode/;../RTCPUtilitiesLib/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>../WinNTSupport/Win32header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\PlaylistBroadcaster_2015.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions> /I </AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\PlaylistBroadcaster_2015.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\PlaylistBroadcaster_2015.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\WinNTSupport\Release\PlaylistBroadcaster_2015.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;wsock32.lib;winmm.lib;libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;../CommonUtilitiesLib/;../QTFileLib/;../RTPMetaInfoLib/;../RTSPClientLib/;../APIModules/;../APIStubLib/;../APICommonCode/;../RTCPUtilitiesLib/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>../WinNTSupport/Win32header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\PlaylistBroadcaster_2015.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <AdditionalOptions> /I </AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4101;4244;4267;4474;4477;4778;4805;4819;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\PlaylistBroadcaster_2015.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\PlaylistBroadcaster_2015.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\WinNTSupport\Debug\PlaylistBroadcaster_2015.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;wsock32.lib;winmm.lib;libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CommonUtilitiesLib\QueryParamList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\CommonUtilitiesLib\ResizeableStringFormatter.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\OSMemoryLib\OSMemory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\RTSPClientLib\ClientSocket.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\RTSPClientLib\RTSPClient.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BroadcasterSession.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BroadcastLog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NoRepeat.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PickerFromFile.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PlaylistBroadcaster.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PlaylistPicker.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_broadcaster.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_elements.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_lists.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_parsers.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_QTRTPBroadcastFile.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_SDPGen.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_SimpleParse.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="playlist_utils.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="PLBroadcastDef.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /I   /I </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I   /I </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H" />
+    <ClInclude Include="..\APICommonCode\QTSSRollingLog.h" />
+    <ClInclude Include="..\APICommonCode\SDPSourceInfo.h" />
+    <ClInclude Include="..\APICommonCode\SourceInfo.h" />
+    <ClInclude Include="..\APIStubLib\QTSS.h" />
+    <ClInclude Include="..\APIStubLib\QTSSRTSPProtocol.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\atomic.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\base64.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\ConfParser.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\DateTranslator.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\ev.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\EventContext.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\FastCopyMacros.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\getopt.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\GetWord.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\IdleTask.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\md5.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\md5digest.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\MyAssert.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OS.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSArrayObjectDeleter.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSBufferPool.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSCodeFragment.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSCond.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSFileSource.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSHashTable.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSHeaders.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSHeap.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSMemory.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSMutex.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSMutexRW.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSQueue.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSRef.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\OSThread.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\PLDoubleLinkedList.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\QueryParamList.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\ResizeableStringFormatter.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\SafeStdLib.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\SDPUtils.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\Socket.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\SocketUtils.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\StringFormatter.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\StringParser.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\StringTranslator.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\StrPtrLen.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\Task.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\TCPListenerSocket.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\TCPSocket.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\TimeoutTask.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\Trim.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\UDPDemuxer.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\UDPSocket.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\UDPSocketPool.h" />
+    <ClInclude Include="..\CommonUtilitiesLib\UserAgentParser.h" />
+    <ClInclude Include="..\PlatformHeader.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_dref.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_elst.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_hinf.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_mdhd.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_mvhd.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stco.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stsc.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stsd.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stss.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stsz.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_stts.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_tkhd.h" />
+    <ClInclude Include="..\QTFileLib\QTAtom_tref.h" />
+    <ClInclude Include="..\QTFileLib\QTFile.h" />
+    <ClInclude Include="..\QTFileLib\QTFile_FileControlBlock.h" />
+    <ClInclude Include="..\QTFileLib\QTHintTrack.h" />
+    <ClInclude Include="..\QTFileLib\QTRTPFile.h" />
+    <ClInclude Include="..\QTFileLib\QTTrack.h" />
+    <ClInclude Include="..\revision.h" />
+    <ClInclude Include="..\RTPMetaInfoLib\RTPMetaInfoPacket.h" />
+    <ClInclude Include="..\RTSPClientLib\ClientSocket.h" />
+    <ClInclude Include="..\RTSPClientLib\RTSPClient.h" />
+    <ClInclude Include="..\WinNTSupport\Win32header.h" />
+    <ClInclude Include="BroadcasterSession.h" />
+    <ClInclude Include="BroadcastLog.h" />
+    <ClInclude Include="NoRepeat.h" />
+    <ClInclude Include="PickerFromFile.h" />
+    <ClInclude Include="PlaylistPicker.h" />
+    <ClInclude Include="playlist_array.h" />
+    <ClInclude Include="playlist_broadcaster.h" />
+    <ClInclude Include="playlist_elements.h" />
+    <ClInclude Include="playlist_lists.h" />
+    <ClInclude Include="playlist_parsers.h" />
+    <ClInclude Include="playlist_QTRTPBroadcastFile.h" />
+    <ClInclude Include="playlist_SDPGen.h" />
+    <ClInclude Include="playlist_SimpleParse.h" />
+    <ClInclude Include="playlist_utils.h" />
+    <ClInclude Include="PLBroadcastDef.h" />
+    <ClInclude Include="SimplePlayListElement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APICommonCode\APICommonCode_2015.vcxproj">
+      <Project>{54d5d12b-b41e-4dc1-8635-727ff5bbcf7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\QTFileLib\QTFileExternalLib\QTFileExternalLib_2015.vcxproj">
+      <Project>{355c9514-6a7e-4db0-831b-8cc5e4897516}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SafeStdLib\SafeInternalStdLib_2015.vcxproj">
+      <Project>{e0a7f079-c7a4-40ac-94cc-8e2df9427a03}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

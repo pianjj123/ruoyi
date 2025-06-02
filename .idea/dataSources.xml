@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="SemanticSymbols" uuid="f08e2c4d-8bd0-4029-9ef6-c8a499586a25">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\WinNTSupport\.vs\StreamingServer_2022\CopilotIndices\17.13.433.20974\SemanticSymbols.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

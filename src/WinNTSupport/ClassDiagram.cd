@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DNSResolverThread">
+    <Position X="0.75" Y="1" Width="1.75" />
+    <NestedTypes>
+      <Class Name="DNSResolverThread::RereadPrefsTask" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QTSSMP3AccessLog">
+    <Position X="0.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAAAAAAAAAAAAAEAAAAAAAAAAEAAQAIAAI=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSMP3StreamingModule\QTSSMP3StreamingModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCheckTask">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAAI=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSAccessLogModule\QTSSAccessLogModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QTSSAccessLog">
+    <Position X="3.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIIAAAAAACAAAAAAAAAAAAAAAAEAAQAIAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSAccessLogModule\QTSSAccessLogModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileSession">
+    <Position X="7.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAQAEEAAEASBAKAAEAAAQAAgAAAQABCAAACA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSFileModule\QTSSFileModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QTSSErrorLog">
+    <Position X="9.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAIAAAAAAAAAAAAAAEAAAAAAAAAEAAQAIAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\QTSSErrorLogModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ErrorLogCheckTask">
+    <Position X="3.75" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAI=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\QTSSErrorLogModule.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RTSPListenerSocket">
+    <Position X="9.75" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAABAABAAAAAAAAIAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\QTSServer.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RTPSocketPool">
+    <Position X="4.25" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAACAAEIAAAAAgAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\QTSServer.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyAckListLog">
+    <Position X="11.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAIAgAAAAAAAAAgAAAAAEAAQAIAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\RTPPacketResender.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyValuePair">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYAABIAAAAAAAAAAAAAAAIAQAAAEAAAAAAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\PrefsSourceLib\FilePrefsSource.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SourceInfoQueueElem">
+    <Position X="7.25" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAEAAAEAIAAAAAAAAAgAAIAAAAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RTSPSessionIDQueueElem">
+    <Position X="3.25" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAg=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PrefConversionInfo">
+    <Position X="0.5" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\GenerateXMLPrefs.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="LevelMsg" Collapsed="true">
+    <Position X="0.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\Server.tproj\QTSSErrorLogModule.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_04e5_1">
+    <Position X="0.75" Y="10.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>C:\Users\10610\Desktop\prj_Darwin_VS_fix-master-c474626d1752782be9e310331f4fb1a095ff4a9b\src\APIModules\QTSSAdminModule\QTSSAdminModule.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

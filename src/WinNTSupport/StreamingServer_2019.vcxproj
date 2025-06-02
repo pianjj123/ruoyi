@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{A275BAC5-6E25-466B-8826-4650F28957A1}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;../Server.tproj/;../CommonUtilitiesLib/;../QTFileLib/;../RTPMetaInfoLib/;../PrefsSourceLib/;../APIModules/;../APIStubLib/;../APICommonCode/;../HTTPUtilitiesLib/;../RTCPUtilitiesLib/;../RTSPClientLib/;../APIModules/QTSSFileModule/;../APIModules/QTSSHttpFileModule/;../APIModules/QTSSAccessModule/;../APIModules/QTSSAccessLogModule/;../APIModules/QTSSPosixFileSysModule/;../APIModules/QTSSAdminModule/;../APIModules/QTSSReflectorModule/;../APIModules/QTSSWebStatsModule/;../APIModules/QTSSWebDebugModule/;../APIModules/QTSSFlowControlModule/;../APIModules/QTSSMP3StreamingModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>../WinNTSupport/Win32header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DSS_USE_API_CALLBACKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\StreamingServer_2019.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4005;4101;4244;4267;4474;4477;4778;4805;4819;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\StreamingServer_2019.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\StreamingServer_2019.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>..\WinNTSupport\Debug\StreamingServer_2019.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../;../Server.tproj/;../CommonUtilitiesLib/;../QTFileLib/;../RTPMetaInfoLib/;../PrefsSourceLib/;../APIModules/;../APIStubLib/;../APICommonCode/;../HTTPUtilitiesLib/;../RTCPUtilitiesLib/;../RTSPClientLib/;../APIModules/QTSSFileModule/;../APIModules/QTSSHttpFileModule/;../APIModules/QTSSAccessModule/;../APIModules/QTSSAccessLogModule/;../APIModules/QTSSPosixFileSysModule/;../APIModules/QTSSAdminModule/;../APIModules/QTSSReflectorModule/;../APIModules/QTSSWebStatsModule/;../APIModules/QTSSWebDebugModule/;../APIModules/QTSSFlowControlModule/;../APIModules/QTSSMP3StreamingModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>../WinNTSupport/Win32header.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;DSS_USE_API_CALLBACKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\StreamingServer_2019.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\StreamingServer_2019.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\StreamingServer_2019.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>..\WinNTSupport\Release\StreamingServer_2019.exe</OutputFile>
+      <AdditionalDependencies>libcmt.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\APIModules\QTSSAccessLogModule\QTSSAccessLogModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSAccessModule\AccessChecker.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSAccessModule\QTSSAccessModule.cpp">
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DebugInformationFormat>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DebugInformationFormat>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSAdminModule\AdminElementNode.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSAdminModule\AdminQuery.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSAdminModule\QTSSAdminModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSFileModule\QTSSFileModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSFlowControlModule\QTSSFlowControlModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSMP3StreamingModule\QTSSMP3StreamingModule.cpp" />
+    <ClCompile Include="..\APIModules\QTSSPOSIXFileSysModule\QTSSPosixFileSysModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\QTSSReflectorModule.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\QTSSRelayModule.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RCFSourceInfo.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\ReflectorSession.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\ReflectorStream.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RelayOutput.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RelaySDPSourceInfo.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RelaySession.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RTPSessionOutput.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\RTSPSourceInfo.cpp" />
+    <ClCompile Include="..\APIModules\QTSSReflectorModule\SequenceNumberMap.cpp" />
+    <ClCompile Include="..\APIModules\QTSSWebDebugModule\QTSSWebDebugModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\APIModules\QTSSWebStatsModule\QTSSWebStatsModule.cpp">
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="..\HTTPUtilitiesLib\HTTPProtocol.cpp" />
+    <ClCompile Include="..\HTTPUtilitiesLib\HTTPRequest.cpp" />
+    <ClCompile Include="..\OSMemoryLib\OSMemory.cpp" />
+    <ClCompile Include="..\PrefsSourceLib\FilePrefsSource.cpp" />
+    <ClCompile Include="..\PrefsSourceLib\XMLParser.cpp" />
+    <ClCompile Include="..\PrefsSourceLib\XMLPrefsParser.cpp" />
+    <ClCompile Include="..\RTCPUtilitiesLib\RTCPAckPacket.cpp" />
+    <ClCompile Include="..\RTCPUtilitiesLib\RTCPAPPPacket.cpp" />
+    <ClCompile Include="..\RTCPUtilitiesLib\RTCPPacket.cpp" />
+    <ClCompile Include="..\RTCPUtilitiesLib\RTCPSRPacket.cpp" />
+    <ClCompile Include="..\RTSPClientLib\ClientSocket.cpp" />
+    <ClCompile Include="..\RTSPClientLib\RTSPClient.cpp" />
+    <ClCompile Include="..\SafeStdLib\InternalStdLib.cpp" />
+    <ClCompile Include="..\Server.tproj\GenerateXMLPrefs.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSCallbacks.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSDataConverter.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSDictionary.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSErrorLogModule.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSServer.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSServerInterface.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSServerPrefs.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSExpirationDate.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSFile.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSMessages.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSModule.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSPrefs.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSSocket.cpp" />
+    <ClCompile Include="..\Server.tproj\QTSSUserProfile.cpp" />
+    <ClCompile Include="..\Server.tproj\RTCPTask.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPBandwidthTracker.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPOverbufferWindow.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPPacketResender.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPSession.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPSessionInterface.cpp" />
+    <ClCompile Include="..\Server.tproj\RTPStream.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPProtocol.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPRequest.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPRequestInterface.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPRequestStream.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPResponseStream.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPSession.cpp" />
+    <ClCompile Include="..\Server.tproj\RTSPSessionInterface.cpp" />
+    <ClCompile Include="..\Server.tproj\RunServer.cpp" />
+    <ClCompile Include="..\Server.tproj\win32main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="streamingrelay.cfg" />
+    <CustomBuild Include="StreamingServer.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APICommonCode\APICommonCode_2019.vcxproj">
+      <Project>{54d5d12b-b41e-4dc1-8635-727ff5bbcf7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\APIStubLib\APIStubLib_2019.vcxproj">
+      <Project>{1d21d9c4-552f-4b1f-96cf-8b7e52c1ba08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonUtilitiesLib\CommonUtilitiesLib_2019.vcxproj">
+      <Project>{96cf7f5c-d277-43c1-91ae-de65feb37bca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\QTFileLib\QTFileLib_2019.vcxproj">
+      <Project>{ff29e69b-ed41-4ac3-b7bb-8512b6963a63}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\SafeStdLib\SafeInternalStdLib_2019.vcxproj">
+      <Project>{e0a7f079-c7a4-40ac-94cc-8e2df9427a03}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
